@@ -118,10 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    "/var/www/static/",
-]
+STATICFILES_DIRS = [BASE_DIR / "static"]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -133,3 +130,6 @@ LOGIN_URL = "login"
 LOGOUT_URL = "logout"
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / "media"
